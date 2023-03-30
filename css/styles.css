@@ -1,0 +1,139 @@
+body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav *{
+    margin: 0;
+    padding: 0;
+} */
+
+.logo-img{
+    width: 6rem;
+}
+
+.navbar{
+    background-color: #ffffff ;
+}
+.nav-link{
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 1rem;
+}
+
+.hero-section{
+    height: 100vh;
+    background-image: url("../img/cover-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+}
+
+
+
+.hero-img{
+    height: 10vh;
+    width: 100%;
+    margin: 0;     
+    padding: 0;
+}
+.hero-col{
+    padding: 0 !important;
+}
+
+.hero-text{
+    font-family: 'Titillium Web', sans-serif;
+    color: white; 
+    font-size: 5rem;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1rem;
+    font-weight: light;
+    /* margin-top  : 10rem; */
+    /* text-align: center; */
+    /* padding: 5em; */
+}
+
+.span-text p{
+    color: #ffffff;
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    font-style: oblique;
+    font-weight: 100;   
+}
+
+.span-button{
+    border: 1px solid black;
+}
+.span-button a{
+    /* border: 1px solid white; */
+    color:#EDF1D6;
+    letter-spacing: 0;
+    font-size: 1.25rem;
+}
+
+.link:link { text-decoration: none; }
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+.carrusel-text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem; 
+}
+
+.info{
+    font-family: 'Titillium Web', sans-serif;
+}
+/* 
+.carousel-item{
+    display: flex;
+    flex-direction: row;
+} */
+.carrusel-img{
+    width: 10rem    ;
+    /* width: 10vw; */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.logo-footer{
+    width: 2.25rem;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.lista-footer{
+    list-style: none;
+    align-items: center;
+}
+
+.footer-text{
+    font-family: 'Titillium Web', sans-serif;
+    color: beige;
+    font-weight: bold;
+    padding: 1rem 0s;
+    font-size: 1rem;
+}
+
+.copyright-text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    font-weight: light;
+    letter-spacing: 1px;
+    font-style:oblique;
+}
