@@ -8,54 +8,41 @@ body * {
     margin: 0;
     padding: 0;
 }
-/* nav *{
-    margin: 0;
-    padding: 0;
-} */
 
+
+/* NAV STYLES */
+
+.elementos-nav{
+    /* border-bottom: 1px solid black; */
+}
+.nav-item a{
+    border-bottom: 1px solid black;
+
+}
 .logo-img{
     width: 6rem;
 }
 
-.navbar{
-    background-color: #ffffff ;
-}
 .nav-link{
     font-size: 1.5rem;
-    font-family: 'Titillium Web', sans-serif;
     margin: 0 1rem;
 }
 
+
+/* HERO SECTION*/
 .hero-section{
     height: 100vh;
     background-image: url("../img/cover-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;
+    background-size: 100% 100%;
 }
-
-
-
-.hero-img{
-    height: 10vh;
-    width: 100%;
-    margin: 0;     
-    padding: 0;
-}
-.hero-col{
-    padding: 0 !important;
-}
-
 .hero-text{
     font-family: 'Titillium Web', sans-serif;
     color: white; 
-    font-size: 5rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px black;
     letter-spacing: 1rem;
     font-weight: light;
-    /* margin-top  : 10rem; */
-    /* text-align: center; */
-    /* padding: 5em; */
+    padding: 0 2rem 2rem 2rem;
 }
 
 .span-text p{
@@ -64,18 +51,27 @@ body * {
     letter-spacing: 0;
     font-style: oblique;
     font-weight: 100;   
+    padding: 0 2rem;
 }
-
 .span-button{
     border: 1px solid black;
+    padding: 1rem
 }
 .span-button a{
-    /* border: 1px solid white; */
     color:#EDF1D6;
     letter-spacing: 0;
     font-size: 1.25rem;
 }
 
+
+/*  INFORMATION SECTION */
+
+.info{
+    margin: 2rem auto;
+}
+.info-titulo{
+    border-bottom:1px solid black
+}
 .link:link { text-decoration: none; }
 
 .link{
