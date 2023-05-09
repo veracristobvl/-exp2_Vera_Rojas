@@ -9,8 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="JavaScript/validate.js"></script>
+    <script src="JavaScript/main.js"></script>
+
 </head>
 
 <body>
@@ -136,13 +143,101 @@
     <!-- FIN CARRUSEL -->
     
     
+
+
+
+    <!-- FORMULARIO -->
+    <div  class="container p-auto d-flex">
+
+        <!-- IMAGEN LOGO  -->
+        
+        <!-- DIV PADRE DE FORMULARIO -->
+        <div class="form-main-div m-auto" id="formulario" >
+            <!-- DIV TITULO Y TEXTO --> 
+            <div class="img-div">
+                <img src="img/logo.png" alt="">
+            </div> 
+            
+            <div class="form-text-div">
+                <h2 class="form-title-text">Comienza a crear tu cuenta</h2>
+                <p class="form-text">Registrándote en Paz&Flora podrás optar a descuentos exclusivos, además de mantenerte al tanto de noticias y ofertas! Ya tienes una cuenta? <a class="form-text-span" href="">Inicia sesión</a></p>
+            </div>
+        
+            <!-- DIV DE INPUTS -->
+            <div class="form-inputs-div">
+                <form action="" id="formulario-validate">
+                
+                    <div class="form-groupp">
+                        <label for="fnombre">Nombre</label>
+                        <input type="text" id="fnombre" name="fnombre" required>
+                    </div>
+                    
+                    <div>
+                        
+                        <label for="fapellido">Apellido</label>
+                        
+                        <input type="text" id="fapellido" name="fapellido" required>
+                    </div>
+                    
+                    <div>
+                        
+                        <label for="femail">Email</label>
+                        
+                        <input type="email" id="femail" name="femail" required>
+                    </div>
+                    <!-- style="width: 30%;" -->
+                    <div >
+                        
+                        <label for="">Fecha de Nacimiento</label>
+                        
+                        <div id="test" class="fechaNac-div" name="ffechaNac3" >
+                            
+                            <input  onfocus="bordeVerde()" onkeyup="fechaNacCheck()" class="fecha-nac-div-interior" placeholder="DD" type="number" id="ffechaNac2-dd" name="fdianac"  style="display: inline-block; "> <span style="color: rgb(172, 172, 172);font-weight: bold;">/</span>
+                            <input  onfocus="bordeVerde()" onkeyup="fechaNacCheck()" class="fecha-nac-div-interior" placeholder="MM" type="number" id="ffechaNac2-mm" name="ffechaNac"  style="display: inline-block; "><span style="color: rgb(172, 172, 172);font-weight: bold;">/</span>
+                            <input  onfocus="bordeVerde()" onkeyup="fechaNacCheck()" class="fecha-nac-div-interior" placeholder="YYYY" type="number" id="ffechaNac2-yyyy" name="ffechaNac"  style="display: inline-block; ">
+                        </div>
+                        
+                        <!-- <input type="date" id="ffechaNac" name="ffechaNac" required> -->
+                    </div>
+                    
+                    <div>
+
+                        <label for="fpassword">Contraseña</label>
+                        
+                        <input type="password" id="fpassword" name="fpassword" required onkeyup="passwordCheck(this.value)">
+                    </div>
+                    <ul class="password-requirements" >
+                        <li ><span id="mayuscula-span">•</span>  Una letra mayúscula</li>
+                        <li ><span id="numero-span" >•</span>  Un numero</li>
+                        <li><span id="minuscula-span">•</span>  Una letra minúscula</li>
+                        <li ><span id="minimo-span">•</span>  Mínimo 8 caracteres</li>
+                        <li ><span id="car-especial-span">•</span>  Un caracter especial</li>
+                    </ul>
+                    <div>    
+                        <label for="fpassword">Reingresa Contraseña</label>
+                        
+                        <input type="password" id="fpassword2" name="fpassword2" required>
+                        
+                    </div>
+                    
+                    
+                    <input  type="submit" value="Registrarse!" onclick="ingresar_usuario()"> 
+                </form>
+            </div>
+        </div>
+        
     
-    <!-- INICIO FOOTER -->
-    <div class="container-fluid text-center" style="background: rgb(122,168,116);padding: 0; " >
+    </div>
+    
+
+
+   
+<!-- INICIO FOOTER -->
+<div class="container-fluid text-center" style="background: rgb(122,168,116);padding: 0; margin-top: 3rem;" >
+    
         
-        
-        <a class="navbar-brand link" href="index.html" style="border: 0px solid black; margin: 0;">
-            <img src="img/logo.png" alt="" class="logo-img">
+    <a class="navbar-brand link" href="index.html" style="border: 0px solid black; margin: 0;">
+        <img src="img/logo.png" alt="" class="logo-img">
         </a>
         
         <div class="container-fluid text-center " style="padding: 0rem 0rem 1rem 0rem">
@@ -188,10 +283,7 @@
 
         
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-
+  
 </body>
 </html>
 

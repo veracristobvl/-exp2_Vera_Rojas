@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Tester</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background-color: aqua; */
+        
+        }
+        .img-div{
+            width: 15%;
+            border: 0px solid black;
+        }
+        .img-div img{
+            width: 100%;
+        }
+        .form-main-div{
+            border: 0px solid black;
+            width: 30%;
+            height:fit-content;
+            /* display: flex; */
+            }
+        .form-text-div{
+            
+        }
+        .form-title-text{
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        .form-text{
+            font-size: 0.75rem;
+        }
+        .form-text-span{
+            color: inherit;
+            text-decoration: none;
+            color: rgb(122,168,116);
+            font-weight: bold;
+        }
+        .form-inputs-div div{
+            padding: 0.5rem 0 ;
+        }
+        .form-inputs-div form div label{
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+        .form-inputs-div form div input{
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+        .form-inputs-div form div input:focus{
+            border-color: rgb(122,168,116);
+            outline: 0;
+            outline: thin dotted \9;
+        }
+        input[type="submit"]{
+            background: #ffffff;
+            color: inherit;
+            border: 2px solid rgb(122,168,116);
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.75rem;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+     <div class="img-div">
+        <img src="img/logo.png" alt="">
+    </div> 
+    
+    <div class="form-main-div">
+        <div class="form-text-div">
+            <h2 class="form-title-text">Get started with your acount</h2>
+            <p class="form-text">Find your people, Engage your constumers. Build your brand. Do it all with Mailchimp's marketing Platform. Alreay have an acount? <a class="form-text-span" href="">Log in</a></p>
+        </div>
+        
+        <div class="form-inputs-div">
+            <form action="">
+            
+            <div>
+                <label for="fname">Nombre</label>
+                <br>
+                <input type="text" id="fname" name="fname">
+            </div>
+            
+            <div >
+
+                <label for="fapellido">Apellido</label>
+                <br>
+                <input type="text" id="fapellido" name="fapellido">
+            </div>
+            
+            <div>
+
+                <label for="femail">Email</label>
+                <br>    
+                <input type="email" id="femail" name="femail">
+            </div>
+            
+            <div>
+
+                <label for="ffechaNac">Fecha de Nacimiento</label>
+                <br>        
+                <input type="date" id="ffechaNac" name="ffechaNac">
+            </div>
+            
+            <div>
+                
+                <label for="fpassword">Contraseña</label>
+                <br>
+                <input type="password" id="fpassword" name="fpassword">
+                <ul></ul>
+            </div>
+            
+            <input  type="submit" value="Registrarse!"> 
+        </form>
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>
